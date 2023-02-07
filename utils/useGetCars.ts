@@ -11,7 +11,10 @@ function useGetCars(): [boolean, Array<Cars>] {
 
     useEffect(() => {
         setLoading(true)
-        setCars([{id: "l", name: "Lamborghini"}, { id: "f", name: "Ferrari"}])
+        setCars([
+            {id: "l", name: "Lamborghini"},
+            { id: "f", name: "Ferrari"},
+        ])
         setLoading(false)
     }, [])
 
